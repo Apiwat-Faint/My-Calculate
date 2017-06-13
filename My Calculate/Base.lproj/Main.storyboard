@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -32,7 +32,7 @@
                                 <rect key="frame" x="139" y="97" width="97" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJK-5w-dzl">
                                 <rect key="frame" x="225" y="130" width="71" height="36"/>
@@ -44,7 +44,7 @@
                                 <rect key="frame" x="139" y="178" width="97" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xxx" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pl-EJ-vgW">
                                 <rect key="frame" x="131" y="232" width="112" height="39.5"/>
@@ -52,9 +52,8 @@
                                 <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlP-8T-RKc">
-                                <rect key="frame" x="250" y="124" width="91" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlP-8T-RKc">
+                                <rect key="frame" x="280" y="130" width="71" height="36"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="answer"/>
@@ -64,22 +63,40 @@
                         <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="RJK-5w-dzl" secondAttribute="trailing" constant="63" id="4lU-Jm-BGl"/>
+                            <constraint firstItem="SPV-PC-zIQ" firstAttribute="top" secondItem="TXs-d8-fop" secondAttribute="bottom" constant="33" id="5AL-Sr-Vlm"/>
                             <constraint firstItem="TXs-d8-fop" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="5Ne-fV-H9q"/>
+                            <constraint firstItem="9pl-EJ-vgW" firstAttribute="top" secondItem="WPA-O4-986" secondAttribute="bottom" constant="24" id="7Vr-Ht-uOH"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SPV-PC-zIQ" secondAttribute="trailing" constant="123" id="As8-A4-RbW"/>
                             <constraint firstItem="9pl-EJ-vgW" firstAttribute="top" secondItem="WPA-O4-986" secondAttribute="bottom" constant="64" id="AzH-tf-o1C"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qlP-8T-RKc" secondAttribute="trailing" constant="31" id="DG7-7Y-EdX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RJK-5w-dzl" secondAttribute="trailing" constant="63" id="DGn-Zb-bPN"/>
+                            <constraint firstItem="RJK-5w-dzl" firstAttribute="top" secondItem="SPV-PC-zIQ" secondAttribute="bottom" constant="3" id="Dv2-rm-rbO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SPV-PC-zIQ" secondAttribute="trailing" constant="123" id="GhB-5e-gkl"/>
+                            <constraint firstItem="TXs-d8-fop" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="IvM-tk-cpV"/>
                             <constraint firstItem="SPV-PC-zIQ" firstAttribute="top" secondItem="TXs-d8-fop" secondAttribute="bottom" constant="33" id="JfJ-ap-p7T"/>
+                            <constraint firstItem="TXs-d8-fop" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="71" id="Jxj-zv-jIy"/>
                             <constraint firstItem="9pl-EJ-vgW" firstAttribute="top" secondItem="WPA-O4-986" secondAttribute="bottom" constant="24" id="MaY-u4-eiE"/>
                             <constraint firstItem="WPA-O4-986" firstAttribute="top" secondItem="RJK-5w-dzl" secondAttribute="bottom" constant="12" id="NTW-Ji-LcB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9pl-EJ-vgW" secondAttribute="trailing" constant="116" id="O7c-z4-m3q"/>
                             <constraint firstItem="RJK-5w-dzl" firstAttribute="top" secondItem="SPV-PC-zIQ" secondAttribute="bottom" constant="3" id="SFK-TH-abZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TXs-d8-fop" secondAttribute="trailing" constant="71" id="Sta-5w-boV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TXs-d8-fop" secondAttribute="trailing" constant="71" id="Uxx-zX-3N2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WPA-O4-986" secondAttribute="trailing" constant="123" id="VT0-Bp-pyK"/>
                             <constraint firstItem="RJK-5w-dzl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="209" id="VZS-j2-EgR"/>
                             <constraint firstItem="TXs-d8-fop" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="71" id="ZCu-d9-Wdf"/>
+                            <constraint firstItem="qlP-8T-RKc" firstAttribute="top" secondItem="TXs-d8-fop" secondAttribute="bottom" constant="66" id="dGO-5b-8zk"/>
+                            <constraint firstItem="WPA-O4-986" firstAttribute="top" secondItem="RJK-5w-dzl" secondAttribute="bottom" constant="12" id="dbh-A6-e8p"/>
+                            <constraint firstItem="WPA-O4-986" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="123" id="drN-3b-2mn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="WPA-O4-986" secondAttribute="trailing" constant="123" id="eiY-Kp-EU1"/>
+                            <constraint firstItem="9pl-EJ-vgW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="115" id="fmz-Tj-bbU"/>
                             <constraint firstItem="9pl-EJ-vgW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="115" id="gda-v5-ZN3"/>
                             <constraint firstItem="9pl-EJ-vgW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="115" id="hQu-5H-YXS"/>
                             <constraint firstItem="WPA-O4-986" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="123" id="jHN-sY-pC3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9pl-EJ-vgW" secondAttribute="trailing" constant="116" id="l5k-Lb-0Bc"/>
+                            <constraint firstItem="SPV-PC-zIQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="123" id="lvC-t0-ITq"/>
+                            <constraint firstItem="qlP-8T-RKc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="241" id="ok8-oc-Rwk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9pl-EJ-vgW" secondAttribute="trailing" constant="116" id="rcb-79-2Ns"/>
+                            <constraint firstItem="RJK-5w-dzl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="209" id="usu-CA-Y8t"/>
                             <constraint firstItem="SPV-PC-zIQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="123" id="wT0-uC-CRE"/>
                         </constraints>
                     </view>
