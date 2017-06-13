@@ -106,6 +106,7 @@
                     <connections>
                         <outlet property="Num1TextFieid" destination="SPV-PC-zIQ" id="P6g-lg-GlF"/>
                         <outlet property="Num2TextFieid" destination="WPA-O4-986" id="jZr-6C-TcD"/>
+                        <outlet property="answerLaber" destination="9pl-EJ-vgW" id="8ZX-KB-m2k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

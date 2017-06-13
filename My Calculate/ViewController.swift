@@ -13,9 +13,17 @@ class ViewController: UIViewController {
     //Implicit
     var intNumber1 = 0
     var intNumber2: Int = 0
+    var intAnswer: Int = 0
+    
+    //Implicit for String
     var strNumber1 = ""
     var strNumber2: String = ""
+    var strAnswer: String = ""
     
+    
+    
+    //Initial View to Outlet
+    @IBOutlet weak var answerLaber: UILabel!
     
     
     
@@ -24,6 +32,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var Num2TextFieid: UITextField!
     
     
+    
+    //Initial View to Action
     @IBAction func answerButton(_ sender: Any) {
         
         strNumber1 = Num1TextFieid.text!
@@ -38,6 +48,12 @@ class ViewController: UIViewController {
         intNumber2 = Int(strNumber2)!
         
         print("intNumber1 ==> \(intNumber1)" + " intNumber2 ==> \(intNumber2)")
+        
+        //Calculate
+        intAnswer = intNumber1 + intNumber2
+        print("intAnswer \(intAnswer)")
+        
+        
         
     } // answerButton
     
