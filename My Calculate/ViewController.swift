@@ -33,6 +33,12 @@ class ViewController: UIViewController {
         //Show Log
         print("strNumber1 ==> \(strNumber1)"  + " strNumber2 ==> \(strNumber2)")
         
+        //Changa Datatype
+        intNumber1 = Int(strNumber1)!
+        intNumber2 = Int(strNumber2)!
+        
+        print("intNumber1 ==> \(intNumber1)" + " intNumber2 ==> \(intNumber2)")
+        
     } // answerButton
     
 
